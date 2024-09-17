@@ -1,7 +1,7 @@
 
-# srijanone/ezcontent_node
+# srijanone/ezcontent_paragraphs
 
-Provides node-based features.
+Provides base for multiple paragraphs like Text, Image, Video etc...
 
 
 ## Installation
@@ -9,7 +9,7 @@ Provides node-based features.
 #### Install the project using composer 
 
 ```bash
-composer require srijanone/ezcontent_node
+composer require srijanone/ezcontent_paragraphs
 ```
 
 ## Tech Stack
