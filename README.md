@@ -12,3 +12,4 @@ composer require srijanone/ezcontent_node
 ```
 
 ## Tech Stack
+**CMS:** Drupal
