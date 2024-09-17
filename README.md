@@ -1,7 +1,7 @@
 
 # srijanone/ezcontent_node
 
-Providesnode-based features.
+Provides node-based features.
 
 
 ## Installation
