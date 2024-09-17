@@ -1,7 +1,6 @@
+# srijanone/ezcontent_node
 
-# srijanone/ezcontent_paragraphs
-
-Provides base for multiple paragraphs like Text, Image, Video etc...
+Provides node-based features.
 
 
 ## Installation
@@ -9,11 +8,7 @@ Provides base for multiple paragraphs like Text, Image, Video etc...
 #### Install the project using composer 
 
 ```bash
-composer require srijanone/ezcontent_paragraphs
+composer require srijanone/ezcontent_node
 ```
 
 ## Tech Stack
-
-**CMS:** Drupal
-
-
