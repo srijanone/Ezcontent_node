@@ -1,5 +1,5 @@
 {
-    "name": "drupal/ezcontent_node",
+    "name": "srijanone/ezcontent_node",
     "description": "Provides shared node fields for other node-based features.",
     "type": "drupal-module",
     "license": "GPL-2.0-or-later",
