@@ -37,7 +37,7 @@ class EZContentAmpOutboundPathProcessor implements OutboundPathProcessorInterfac
   /**
    * {@inheritdoc}
    */
-  public function processOutbound($path, &$options = [], Request $request = NULL, BubbleableMetadata $bubbleable_metadata = NULL): string {
+  public function processOutbound($path, &$options = [], ?Request $request = NULL, ?BubbleableMetadata $bubbleable_metadata = NULL): string {
     // Check if AMP module exists.
     if ($this->moduleHandler->moduleExists('amp')) {
       // If current route is an AMPRoute, then all node page links including
