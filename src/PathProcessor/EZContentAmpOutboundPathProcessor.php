@@ -40,14 +40,15 @@ class EZContentAmpOutboundPathProcessor implements OutboundPathProcessorInterfac
   public function processOutbound($path, &$options = [], ?Request $request = NULL, ?BubbleableMetadata $bubbleable_metadata = NULL): string {
     // Check if AMP module exists.
     if ($this->moduleHandler->moduleExists('amp')) {
-      // If current route is an AMPRoute, then all node page links including
-      // the front page should have the '?amp' parameter in their url to
-      // maintain transition.
+      // Get the current route using routeMatch().
+      $routeMatch = \Drupal::routeMatch();
       $isAmpRoute = \Drupal::service('router.amp_context')->isAmpRoute();
+      // Check if the route is an AMP route and adjust the query accordingly.
       if (isset($options['route']) && $options['route'] instanceof Route) {
-        if (in_array($options['route']->getPath(), ['/', '/node/{node}'])
-          && $isAmpRoute) {
-          $options['query']['amp'] = TRUE;
+        if ($routeMatch->getRouteName() == '<front>' || $routeMatch->getRouteName() == 'entity.node.canonical') {
+          if ($isAmpRoute) {
+            $options['query']['amp'] = TRUE;
+          }
         }
       }
     }
