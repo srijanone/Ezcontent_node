@@ -72,27 +72,6 @@ function ezcontent_node_modules_installed($modules) {
     $config->set('tags.og_determiner', '[site:name]');
   }
   $config->save();
-  //   // Check if the ezcontent_node module is being installed.
-  //     \Drupal::logger("debug")->notice((json_encode($modules)));
-  // if (in_array('ezcontent_node', $modules)) {
-  //   \Drupal::logger("debug")->notice("Inside hook");
-  //       \Drupal::logger("debug")->notice("ezcontent_node condition");
-  //   // Enable the 'ezcontent_theme'.
-  //   $theme_name = 'ezcontent_theme';
-
-  //   // Check if the theme is not already installed and enable it.
-  //   if (!\Drupal::service('theme_handler')->themeExists($theme_name)) {
-  //    \Drupal::logger("debug")->notice("ezcontent_theme condition");
-  //     // Enable the theme using the theme_installer service.
-  //     \Drupal::service('theme_installer')->install([$theme_name]);
-
-  //     // Set it as the default theme.
-  //     \Drupal::configFactory()->getEditable('system.theme')
-  //       ->set('default', $theme_name)
-  //       ->save();
-
-  //     \Drupal::messenger()->addMessage(t('The %theme_name theme has been enabled and set as the default theme.', ['%theme_name' => $theme_name]));
-  //   }}
 
 }
 
